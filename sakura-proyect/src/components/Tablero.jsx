@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useState } from "react";
-import GetCards from "./functions/Functions";
+import GetCards from "../functions/Functions";
 
 function Tablero() {
     const [cards, setCards] = useState([])
