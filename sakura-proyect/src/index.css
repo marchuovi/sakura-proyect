@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  --font: 'Philosopher', sans-serif;
 }
-body{
-  background-color: palevioletred;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }

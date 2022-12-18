@@ -1,12 +1,12 @@
 import Footer from './components/Footer';
 import Header from './components/Header';
-import Tablero from './components/Tablero';
+import Board from './components/Board';
 
 function App() {
   return (
     <>
       <Header />
-      <Tablero />
+      <Board />
       <Footer />
     </>
   );
