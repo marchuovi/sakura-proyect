@@ -1,14 +1,21 @@
 import React from 'react';
-import Logo from'../assets/logo.png';
+import Logo from '../assets/logo.png';
 import '../styles/header.css';
+import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
     <div className='header'>
-      <img src={ Logo } alt="Logo Sakura Tarot" />
+      <img src={Logo} alt="Logo Sakura Tarot" />
       <div>
-        <a href="#">Home</a>
-        <a href="#">Destino</a>
+        <nav>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/destino">Destino</Link>
+            </li>
+        </nav>
       </div>
     </div>
   )

@@ -1,11 +1,12 @@
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import ReactCardFlip from 'react-card-flip';
 import '../styles/board.css';
 
-let selectCards = [];
+export let selectCards = [];
 
-const Card = ({ frontFace, backFace, id }) => {
+
+const Card = ({ frontFace, backFace, id, meaning }) => {
   const [isFlipped, setIsFlipped] = useState(false);
   const handleClick = (event) => {
     const idCard = event.target.id;
@@ -16,12 +17,11 @@ const Card = ({ frontFace, backFace, id }) => {
     else{
       console.warn('No mas')
     }
-    
   }
   return (
     <div className='card'>
       <ReactCardFlip isFlipped={isFlipped}>
-        <img className='card-image' src={backFace} alt="Back face" id={id} onClick={event => handleClick(event)} />
+        <img className='card-image' src={backFace} alt="Back face" id={id} meaning={meaning} onClick={event => handleClick(event)} />
         <img className='card-image' src={frontFace} alt="Front face" />
       </ReactCardFlip>
     </div>

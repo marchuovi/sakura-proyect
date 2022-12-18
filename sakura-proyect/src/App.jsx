@@ -1,13 +1,15 @@
 import Footer from './components/Footer';
-import Header from './components/Header';
-import Board from './components/Board';
+import Home from './components/Home';
+import Destino from './components/Destino'
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <>
-      <Header />
-      <Board />
-      <Footer />
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path="destino" element={<Destino />} />
+      </Routes>
     </>
   );
 }
