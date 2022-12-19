@@ -8,3 +8,15 @@
     padding: 8%;
     font-family: var(--font);
 }
+
+button{
+    padding:8px;
+    margin: 8px;
+
+    background-color: var(--orange);
+    font-size: 16px;
+
+    border:none;
+    border-radius: 8px;
+}
+
