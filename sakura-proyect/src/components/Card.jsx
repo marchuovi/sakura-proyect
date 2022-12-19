@@ -5,14 +5,14 @@ import '../styles/board.css';
 
 export let selectCards = [];
 
-const Card = ({ frontFace, backFace, id, meaning, key }) => {
+const Card = ({ frontFace, backFace, id, meaning }) => {
   const [isFlipped, setIsFlipped] = useState(false);
   const handleClick = (event) => {
     const idCard = event.target;
     console.log(idCard)
     if (selectCards.length < 3) {
       setIsFlipped(!isFlipped);
-      selectCards.push({meaning, idCard, frontFace, key});
+      selectCards.push({meaning, idCard, frontFace, id});
     }
     else{
       console.warn('No mas') //CAMBIAR POR SWEETALERT
@@ -21,7 +21,7 @@ const Card = ({ frontFace, backFace, id, meaning, key }) => {
   return (
     <div className='card'>
       <ReactCardFlip isFlipped={isFlipped}>
-        <img className='card-image' src={backFace} alt="Back face" id={id} meaning={meaning} onClick={event => handleClick(event)}/>
+        <img className='card-image' key={id} src={backFace} alt="Back face" id={id} meaning={meaning} onClick={event => handleClick(event)}/>
         <img className='card-image' src={frontFace} alt="Front face" />
       </ReactCardFlip>
     </div>
