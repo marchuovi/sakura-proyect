@@ -1,0 +1,59 @@
+.board-destine{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 6rem;
+    place-content: center;
+    padding: 10%;
+}
+
+.cardD{
+    width: 100%;
+    cursor: pointer;
+    width: 100%;
+    background-color: rgb(255, 192, 203, .4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardD h2{
+    font-size: 4.5rem;
+    margin: 5% 0;
+}
+
+.cardD img{
+    width: 80%;
+    border-radius: 15px;
+}
+.cardD p{
+    width: 80%;
+    font-size: 1.8rem;
+    margin: 5% 0;
+    text-align: center;
+}
+
+@media (min-width: 768px) { 
+    .board-destine{
+        display: grid;
+        place-content: center;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    .board-destine{
+        display: grid;
+        place-content: center;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1200px) {
+    .board-destine{
+        display: grid;
+        place-content: center;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

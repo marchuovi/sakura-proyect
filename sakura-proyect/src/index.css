@@ -2,17 +2,20 @@
 
 :root {
   --font: 'Philosopher', sans-serif;
-
   --background-color: #EA4C88;
   --white: #fff;
   --orange: #F5D245;
   --bgcolormain: #FEE3B8;
 }
 
+html{
+  font-size: 62.5%;
+}
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: var(--font);
 }
 
 a:-webkit-any-link{

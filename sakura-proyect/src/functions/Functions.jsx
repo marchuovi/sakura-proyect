@@ -4,7 +4,11 @@
 //     // .then (data => (console.log(data)));
 // }
 
-const Data = await fetch('https://6388b6e5a4bb27a7f78f96a5.mockapi.io/sakura-cards/')
-    .then(respuesta => respuesta.json())
+import { selectCards } from "../components/Card"
 
-export default Data
+
+export const Data = await fetch('https://6388b6e5a4bb27a7f78f96a5.mockapi.io/sakura-cards/')
+    .then(respuesta => respuesta.json());
+
+
+export const resetSelectCards = () => {( selectCards = [] )};
