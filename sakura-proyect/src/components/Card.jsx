@@ -12,7 +12,7 @@ const Card = ({ frontFace, backFace, id, meaning }) => {
     console.log(idCard)
     if (selectCards.length < 3) {
       setIsFlipped(!isFlipped);
-      selectCards.push({meaning, idCard, frontFace, id});
+      selectCards.push({meaning, idCard, frontFace, id}); //useState
     }
     else{
       console.warn('No mas') //CAMBIAR POR SWEETALERT

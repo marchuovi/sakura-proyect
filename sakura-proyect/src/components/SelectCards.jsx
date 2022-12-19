@@ -4,7 +4,6 @@ import '../styles/board.css'
 
 
 console.log(selectCards)
-const ppp = ['PASADO', 'PRESENTE', 'FUTURO']
 
 const SelectCards = () => {
   return (
@@ -12,12 +11,14 @@ const SelectCards = () => {
     <div className='board'>
       {
         selectCards.map((card, index) => (
-          <div key={`dest-${card.id}`} >
+          <>
+            {index === 0 && <h2>Pasado</h2>}
+            {index === 1 && <h2>Presente</h2>}
+            {index === 2 && <h2>Futuro</h2>}
             <img id={card.idCard} src={card.frontFace} />
-            <h2>
-              <p>{card.meaning}</p>
-            </h2>
-          </div>))
+            <p>{card.meaning}</p>
+          </>
+        ))
       }
     </div>
   )
