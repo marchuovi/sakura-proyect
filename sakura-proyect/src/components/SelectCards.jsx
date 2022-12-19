@@ -7,7 +7,6 @@ console.log(selectCards)
 
 const SelectCards = () => {
   return (
-
     <div className='board-destine'>
       {
         selectCards.map((card, index) => (
