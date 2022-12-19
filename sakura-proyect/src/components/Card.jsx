@@ -5,27 +5,28 @@ import '../styles/board.css';
 
 export let selectCards = [];
 
-
-const Card = ({ frontFace, backFace, id, meaning }) => {
+const Card = ({ frontFace, backFace, id, meaning, key }) => {
   const [isFlipped, setIsFlipped] = useState(false);
   const handleClick = (event) => {
-    const idCard = event.target.id;
+    const idCard = event.target;
+    console.log(idCard)
     if (selectCards.length < 3) {
       setIsFlipped(!isFlipped);
-      selectCards.push(idCard);
+      selectCards.push({meaning, idCard, frontFace, key});
     }
     else{
-      console.warn('No mas')
+      console.warn('No mas') //CAMBIAR POR SWEETALERT
     }
   }
   return (
     <div className='card'>
       <ReactCardFlip isFlipped={isFlipped}>
-        <img className='card-image' src={backFace} alt="Back face" id={id} meaning={meaning} onClick={event => handleClick(event)} />
+        <img className='card-image' src={backFace} alt="Back face" id={id} meaning={meaning} onClick={event => handleClick(event)}/>
         <img className='card-image' src={frontFace} alt="Front face" />
       </ReactCardFlip>
     </div>
   )
 }
+
 
 export default Card
