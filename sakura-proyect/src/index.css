@@ -1,9 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 :root {
   --font: 'Philosopher', sans-serif;
+
+  --background-color: #EA4C88;
+  --white: #fff;
 }
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+a:-webkit-any-link{
+  text-decoration: none;
+  color:var(--white);
+}
+
+li{
+  list-style: none;
 }

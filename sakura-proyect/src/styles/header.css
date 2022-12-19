@@ -1,4 +1,10 @@
+
 .header{
     width: 100%;
-    background-color: pink;
+    background-color: var(--background-color); 
+    display: flex;
+    justify-content: space-between;
+
+    padding: 8%;
+    font-family: var(--font);
 }
