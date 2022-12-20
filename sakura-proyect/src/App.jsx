@@ -1,6 +1,6 @@
 import Home from './components/Home';
 import Lecture from './components/Lecture';
-import Destino from './components/Destino';
+import Destine from './components/Destine';
 import { Routes, Route } from "react-router-dom";
 
 
@@ -10,7 +10,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path="lecture" element={<Lecture />} />
-        <Route path="destino" element={<Destino />} />
+        <Route path="destine" element={<Destine />} />
       </Routes>
     </>
   );

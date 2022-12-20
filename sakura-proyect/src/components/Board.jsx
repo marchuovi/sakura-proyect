@@ -2,10 +2,18 @@ import { useState, useEffect } from "react";
 import { Data } from "../functions/Data";
 import '../styles/board.css'
 import Card from "./Card";
+import Swal from 'sweetalert2'
+
 
 function Board() {
     const [cards, setCards] = useState([]);
     const shuffle = (array) => {
+        Swal.fire({
+            title: 'Leamos tu destino',
+            text: 'A continuación selecciona tus cartas',
+            icon: 'info',
+            confirmButtonText: 'Ir al tablero'
+          })
         return array.sort(() => Math.random() - 0.5);
     }
 

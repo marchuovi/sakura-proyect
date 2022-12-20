@@ -1,9 +1,10 @@
+import { selectCards } from './Card';
 import Footer from './Footer';
 import Header from './Header'
 import SelectCards from './SelectCards';
 
 
-const Destino = () => {
+const Destine = () => {
   return (
     <div>
     <Header/>
@@ -13,4 +14,4 @@ const Destino = () => {
   )
 }
 
-export default Destino;
+export default Destine;

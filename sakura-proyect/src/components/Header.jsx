@@ -14,7 +14,7 @@ export default function Header() {
           <Link to="/lecture" onClick={event => resetSelectCards(event)}>Nueva Lectura</Link>
         </button>
         <button className="btn-header">
-          <Link to="/destino">Destino</Link>
+          <Link to="/destine">Destino</Link>
         </button>
       </nav>
     </div>
