@@ -9,8 +9,8 @@ import '../styles/home.css'
 const Home = () => {
   return (
     <div className='home-page'>
+      <img className='logo' src={logo2} alt="logo sakura tarot" />
       <section className='container'>
-        <img className='logo' src={logo2} alt="logo sakura tarot" />
         <div className='text'>
           <h2>Sakura y Kero te ayudarán a capturar las cartas de tu destino</h2>
           <p>Selecciona 3 cartas:</p>
