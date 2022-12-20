@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 export default function Header() {
   return (
     <div className="header">
-      <img src={Logo} alt="Logo Sakura Tarot" />
+      <img className="logoheader" src={Logo} alt="Logo Sakura Tarot" />
 
       <nav>
         <button>
