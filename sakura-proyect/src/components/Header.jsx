@@ -7,9 +7,8 @@ export default function Header() {
   return (
     <div className="header">
       <Link to="/">
-      <img src={Logo} alt="Logo Sakura Tarot"/>
+      <img className="logoheader" src={Logo} alt="Logo Sakura Tarot"/>
       </Link>
-
       <nav>
         <button>
           <Link to="/lecture" onClick={event => resetSelectCards(event)}>Nueva Lectura</Link>

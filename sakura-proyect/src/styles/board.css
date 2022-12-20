@@ -27,24 +27,6 @@
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .footer{
-        width: 100%;
-        background-color: var(--background-color); 
-        vertical-align: middle;
-        text-align: center;
-        padding: 6%; 
-    }
-
-    h6{
-        font-family: var(--font);
-        color:var(--white);
-        font-size: 1em;
-    }
-    
-    .footer img{
-        width: 25%;
-        padding: 8px;
-    }
 }
 
 @media (min-width: 992px) {
@@ -60,5 +42,21 @@
         display: grid;
         place-content: center;
         grid-template-columns: repeat(7, 1fr);
+    }
+
+    .footer img{
+        width: 7%;
+    }
+
+    .logoheader{
+        width: 15%;
+        padding-left: 8%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+
+    nav{
+        padding-right: 8%;
+        padding-top: 2%;
     }
 }
