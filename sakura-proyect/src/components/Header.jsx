@@ -6,11 +6,13 @@ import { Link } from "react-router-dom";
 export default function Header() {
   return (
     <div className="header">
-      <img src={Logo} alt="Logo Sakura Tarot" />
+      <Link to="/">
+      <img src={Logo} alt="Logo Sakura Tarot"/>
+      </Link>
 
       <nav>
         <button>
-          <Link to="/home" onClick={event => resetSelectCards(event)}>Home</Link>
+          <Link to="/lecture" onClick={event => resetSelectCards(event)}>Nueva Lectura</Link>
         </button>
         <button>
           <Link to="/destino">Destino</Link>

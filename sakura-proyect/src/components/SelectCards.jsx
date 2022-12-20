@@ -2,9 +2,6 @@ import React from 'react'
 import { selectCards } from './Card'
 import '../styles/destine.css'
 
-
-console.log(selectCards)
-
 const SelectCards = () => {
   return (
     <div className='board-destine'>

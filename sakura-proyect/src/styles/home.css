@@ -1,0 +1,129 @@
+.home-page {
+    height: 100vh;
+    width: 100%;
+}
+
+.container {
+    height: 70vh;
+    margin-top: 10%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container .logo {
+    margin-top: 15%;
+    width: 50%;
+}
+
+.container .text {
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: rgba(234, 76, 136, .3) 0px 20px 30px;
+    background-color: var(--pinkopacity);
+    padding: 5%;
+}
+
+.container .text h2 {
+    text-align: center;
+    font-size: 2.4rem;
+    padding: 2%;
+}
+
+.container .text p {
+    font-size: 2rem;
+    margin: 5% 0;
+}
+
+.container .text ol {
+    font-size: 1.5rem;
+    padding-left: 2rem;
+    background-image: url(../assets/logoFooter.png);
+    background-position: 0 0;
+    background-size: 1.6rem 1.6rem;
+    background-repeat: no-repeat;
+
+}
+
+.container .sakura-img {
+    position: absolute;
+    width: 70%;
+    left: 20%;
+    bottom: 25%;
+    animation: move-img 4s linear infinite;
+}
+
+@keyframes move-img {
+    0% {
+        transform: translateY(15px);
+    }
+
+    50% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(15px);
+    }
+}
+
+.btn-home {
+    width: 50%;
+    height: 5%;
+    margin: 0 10%;
+    font-size: 1.8rem;
+}
+
+.footer {
+    width: 100%;
+    align-self: flex-end;
+    margin-top: 20%;
+}
+
+@media (min-width: 768px) {
+    .container .logo {
+        width: 30%;
+        margin-top: 5%;
+    }
+
+    .container .sakura-img {
+        width: 50%;
+        left: 40%;
+        bottom: 25%;
+    }
+
+    .btn-home {
+        width: 50%;
+        height: 8%;
+    }
+
+    .footer {
+        width: 100%;
+        align-self: flex-end;
+    }
+}
+
+@media (min-width: 992px) {
+    .container .logo {
+        width: 25%;
+    }
+
+    .container .sakura-img {
+        width: 50%;
+        left: 40%;
+        bottom: 10%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container .logo {
+        width: 25%;
+    }
+
+    .container .sakura-img {
+        width: 30%;
+        left: 60%;
+        bottom: 3%;
+    }
+}
