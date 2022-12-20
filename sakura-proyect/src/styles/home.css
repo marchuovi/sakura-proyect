@@ -1,19 +1,17 @@
 .home-page {
     width: 100%;
-    padding: 1%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 .logo {
-    /* margin: 10% 0; */
+    margin: 5% 0;
     width: 30%;
     align-self: center;
 }
 
 .container {
-    /* height: 60vh; */
     display: flex;
     justify-content: start;
     align-items: center;
@@ -77,11 +75,12 @@
     background-color: var(--orange);
     border-radius: 10px;
     border:none;
-    margin-bottom: 2%;
+    margin-bottom: 10%;
    
 }
 
 @media screen and (min-width: 768px) {
+    
     .container {
         width: 80%;
         flex-direction: row;

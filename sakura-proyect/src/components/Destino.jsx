@@ -5,7 +5,7 @@ import SelectCards from './SelectCards';
 
 const Destino = () => {
   return (
-    <div className='destine-page'>
+    <div>
     <Header/>
     <SelectCards />
     <Footer />
