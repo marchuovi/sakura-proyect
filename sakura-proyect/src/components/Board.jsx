@@ -5,8 +5,13 @@ import Card from "./Card";
 
 function Board() {
     const [cards, setCards] = useState([]);
+    const shuffle = (array) => {
+        return array.sort(() => Math.random() - 0.5);
+    }
+
     useEffect(() => {
-        setCards(Data) //Aleatorio de cartas desordenarlas
+        shuffle(Data);
+        setCards(Data);
     }, [])
 
     return (

@@ -1,17 +1,16 @@
 
 .footer{
     width: 100%;
-    height: 10vh;
-    background-color: var(--background-color); 
-    vertical-align: middle;
-    text-align: center;
-    padding: 2%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--background-color);
 }
 
 h6{
-    font-family: var(--font);
     color:var(--white);
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .footer img{

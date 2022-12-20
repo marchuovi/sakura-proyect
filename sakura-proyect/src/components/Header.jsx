@@ -9,11 +9,11 @@ export default function Header() {
       <Link to="/">
       <img className="logoheader" src={Logo} alt="Logo Sakura Tarot"/>
       </Link>
-      <nav>
-        <button>
+      <nav className="nav-header">
+        <button className="btn-header">
           <Link to="/lecture" onClick={event => resetSelectCards(event)}>Nueva Lectura</Link>
         </button>
-        <button>
+        <button className="btn-header">
           <Link to="/destino">Destino</Link>
         </button>
       </nav>

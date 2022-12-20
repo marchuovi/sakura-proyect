@@ -1,20 +1,19 @@
 .home-page {
-    height: 100vh;
     width: 100%;
+    padding: 1%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 .logo {
-    margin: 10% 0;
+    /* margin: 10% 0; */
     width: 30%;
     align-self: center;
 }
 
 .container {
-    height: 60vh;
-    /* margin-top: 10%; */
+    /* height: 60vh; */
     display: flex;
     justify-content: start;
     align-items: center;
@@ -52,7 +51,7 @@
 }
 
 .container .sakura-img {
-    width: 60%;
+    width: 55%;
     animation: move-img 4s linear infinite;
 }
 
@@ -71,23 +70,27 @@
 }
 
 .btn-home {
-    /* width: 50%; */
-    padding: 5%;
-    margin: 10% 10%;
-    font-size: 2.6rem;
+    width: 80%;
+    padding: 3%;
+    font-size: 2.4rem;
+    align-self: center;
+    background-color: var(--orange);
+    border-radius: 10px;
+    border:none;
+    margin-bottom: 2%;
+   
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .container {
         width: 80%;
         flex-direction: row;
         height: 30vh;
         margin: 0 10%;
     }
-
     .logo {
         align-self: center;
-        margin: 5% 10%;
+        /* margin: 5% 10%; */
         width: 20%;
     }
 
@@ -99,13 +102,16 @@
     .container .sakura-img {
         width: 50%;
     }
-
-    .btn-home {
-        padding: 1%;
+    .btn-home{
+        width: 50%;
+        margin-top: 10%;
+        padding: 2%;
+        align-items: center;
+        /* margin: 0 10%; */
     }
 }
 
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
     .container .logo {
         width: 25%;
     }
@@ -113,9 +119,13 @@
     .container .sakura-img {
         width: 50%;
     }
+    .btn-home{
+        margin-top: 5%;
+        width: 40%;
+    }
 }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
     .logo {
         margin: 5% 0;
         width: 15%;
@@ -131,14 +141,13 @@
     .container .text ol{
         font-size: 2rem;
     }
-    
-
     .container .sakura-img {
         width: 40%;
     }
 
     .btn-home {
-        width: 40%;
+        width: 50%;
         padding: 3%;
+        margin-top: 0%;
     }
 }

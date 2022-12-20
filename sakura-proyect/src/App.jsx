@@ -1,6 +1,6 @@
 import Home from './components/Home';
 import Lecture from './components/Lecture';
-import Destino from './components/Destino'
+import Destino from './components/Destino';
 import { Routes, Route } from "react-router-dom";
 
 

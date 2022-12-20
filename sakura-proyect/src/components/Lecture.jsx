@@ -7,11 +7,11 @@ import Header from './Header'
 const Lecture = () => {
   
   return (
-    <>
+    <div className='lecture-page'>
     <Header />
     <Board />
     <Footer />
-    </>
+    </div>
   )
 }
 
