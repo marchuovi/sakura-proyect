@@ -10,7 +10,7 @@ export default function Header() {
 
       <nav>
         <button>
-          <Link to="/" onClick={event => resetSelectCards(event)}>Home</Link>
+          <Link to="/home" onClick={event => resetSelectCards(event)}>Home</Link>
         </button>
         <button>
           <Link to="/destino">Destino</Link>

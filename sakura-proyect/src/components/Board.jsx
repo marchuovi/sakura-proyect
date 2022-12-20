@@ -6,7 +6,7 @@ import Card from "./Card";
 function Board() {
     const [cards, setCards] = useState([]);
     useEffect(() => {
-        setCards(Data)
+        setCards(Data) //Aleatorio de cartas desordenarlas
     }, [])
 
     return (
