@@ -4,7 +4,7 @@ The objective is to make an application that consumes the Sakura API that return
 ​
 ## :iphone:Mobile Graphic reference
 ​
-![Mobile](https://github.com/marchuovi/sakura-proyect/blob/readme/sakura-proyect/src/assets/Mobile%20.png)
+![Mobile](https://github.com/marchuovi/sakura-proyect/blob/readme/sakura-proyect/src/assets/Mobile.png)
 ​
 ## :desktop_computer:Desktop Graphic reference
 ​
