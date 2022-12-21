@@ -1,11 +1,7 @@
 # :crystal_ball:SakuraTarot
 
 The objective is to make an application that consumes the Sakura API that returns a JSON file with the information of the cards, for this exercise you will be able to choose between showing the sakura card or the clown card. 
-   
-## :open_book:Project description   
-​        
-         
-   ​
+​
 ## :iphone:Mobile Graphic reference
 ​
 ![Mobile](https://www.notion.so/Sakura-Tarot-2e948299c7504f038e73e2153cbe0bd8)
