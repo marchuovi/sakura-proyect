@@ -1,6 +1,6 @@
 .header {
     width: 100%;
-    padding: 5%;
+    padding: 2%;
     background-color: var(--background-color);
     display: flex;
     align-items: center;
@@ -18,19 +18,11 @@
     align-items: center;
 }
 
-.btn-header {
-    width: 100%;
-    padding: 10%;
-    margin: 4% 0;
-    background-color: var(--orange);
-    font-size: 2rem;
-    border: none;
-    border-radius: 10px;
-}
+
 
 @media screen and (min-width: 768px) {
     .header {
-        padding: 0 10%;
+        padding: 0 5%;
     }
 
     .logoheader {
@@ -51,28 +43,34 @@
 
 @media screen and (min-width: 992px) {
     .header {
-        padding: 5%;
+        padding: 2%;
     }
     .logoheader {
         width: 120%;
     }
     .btn-header{
         margin: 0 2%;
-        padding: 15px;
+        /* padding: 15px; */
         font-size: 2.4rem;
     }
 }
 
 @media screen and (min-width: 1200px) {
     .header {
-        padding: 5%;
+        padding: 2%;
     }
 
-    .header img {
-        width: 150%;
+    .logoheader {
+        width: 100%;
     }
 
-    button {
-        font-size: 2.4rem;
+    .btn-header {
+        width: 100%;
+        padding: 2%;
+        margin: 0 5%;
+        background-color: var(--orange);
+        font-size: 2rem;
+        border: none;
+        border-radius: 10px;
     }
 }
