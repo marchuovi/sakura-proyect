@@ -8,11 +8,11 @@ The objective is to make an application that consumes the Sakura API that return
    ​
 ## :iphone:Mobile Graphic reference
 ​
-![Mobile]()
+![Mobile](https://www.notion.so/Sakura-Tarot-2e948299c7504f038e73e2153cbe0bd8)
 ​
 ## :desktop_computer:Desktop Graphic reference
 ​
-![Desktop]()
+![Desktop](https://www.notion.so/Sakura-Tarot-2e948299c7504f038e73e2153cbe0bd8)
 ​
 ## :hammer_and_wrench:Tools 
 - Figma
